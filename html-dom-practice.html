@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM 網頁畫面操作</title>
+    <!--
+    <style>
+        .text{
+            text-decoration: underline;font-weight: bold;
+        }
+    </style>
+    -->
+</head>
+<body>
+    <div>
+        <span onclick="changetoE()">關於我</span>
+        <span onclick="changetoA();">學經歷</span>
+    </div>
+    <div id ="about">I'm mark</div>
+    <div id = "exps"style="display: none;">I'm study CS</div>
+    <script>
+        function changetoA() {
+            let aboutA = document.querySelector("#about");
+            let expsE = document.querySelector("#exps");
+            aboutA.style.display = "none";
+            expsE.style.display = "block";
+        }
+        function changetoE() {
+            let aboutA = document.querySelector("#about");
+            let expsE = document.querySelector("#exps");
+            aboutA.style.display = "block";
+            expsE.style.display = "none";
+        }
+    </script>
+    <!--
+    <h3>HTML DOM</h3>
+    <div id ="content">HTML DOM PRac</div>
+    <button onclick="change();">click</button>
+    <script>
+        function change() {
+            let elem = document.querySelector("#content");
+            elem.innerHTML="ccccccc";
+            elem.className = "text";
+            elem.style.fontSize= "30px";
+            elem.style.color = "red";
+        }
+        
+    </script>
+    -->
+</body>
+</html>
